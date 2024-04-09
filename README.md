@@ -2,10 +2,10 @@
 Trash can of thoughts
 
 ```sh
-gitter clone gitter@github.com:grunwmar/trash-can-of-thoughts.gitter
+git clone gitter@github.com:grunwmar/trash-can-of-thoughts.git
 ```
 
 Force push
 ```sh
-zsh gitter.fpush
+zsh gitter push
 ```
