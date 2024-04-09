@@ -1,4 +1,6 @@
 from math import gcd
+
+RATIONAL_STR = "{dividend}/{divisor}"
 class Rational(object):
 
 
@@ -16,16 +18,12 @@ class Rational(object):
 
     def __str__(self):
         a, b = self._val
-        return f"{a}/{b}"
+        q, r = a // b, a % b
+        return RATIONAL_STR.format(dividend=a, divisor=b, quotient=q, remainder=r)
 
     def __repr__(self):
         return self.__str__()
 
-    def __invert__(self):
-        a, b = self._val
-        q = a // b
-        r = a % b
-        return q, self.__class__(r, b)
 
     def remainder(self, rational=True):
         a, b = self._val
@@ -37,6 +35,8 @@ class Rational(object):
         else:
             return q, r
 
-r = Rational(150, 26)
+    def __invert__(self):
+        a, b = self._val
+        return self.__class__(b, a)
 
-print(~r)
+    #TODO: Arithmetic operations!!
