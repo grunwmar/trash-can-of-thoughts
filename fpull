@@ -1,0 +1,9 @@
+#!/usr/bin/zsh
+DATE="$(date +D%d%m%yT%H%M%S)"
+BRANCH_NAME="pull-branch/$DATE"
+
+git checkout -b $BRANCH_NAME¨
+git branch --set-upstream-to=origin/$BRANCH_NAME $BRANCH_NAME
+git pull -f
+
+
