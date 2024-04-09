@@ -1,4 +1,4 @@
 #!/usr/bin/zsh
 git add .
-git commit -m "Auto-commit $(date)"
+git commit -m "#auto-commit: [$(date)]"
 git push -f
