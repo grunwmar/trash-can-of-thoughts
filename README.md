@@ -7,5 +7,5 @@ git clone git@github.com:grunwmar/trash-can-of-thoughts.git
 
 Force push
 ```sh
-zsh fpush
+zsh git.fpush
 ```
