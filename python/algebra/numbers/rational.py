@@ -27,11 +27,15 @@ class Rational(object):
         r = a % b
         return q, self.__class__(r, b)
 
-    def with_remainder(self):
+    def remainder(self, rational=True):
         a, b = self._val
         q = a // b
         r = a % b
-        return q, r
+
+        if rational:
+            return q, self.__class__(r, b)
+        else:
+            return q, r
 
 r = Rational(150, 26)
 
