@@ -2,7 +2,7 @@
 Trash can of thoughts
 
 ```sh
-git clone gitter@github.com:grunwmar/trash-can-of-thoughts.git
+git clone git@github.com:grunwmar/trash-can-of-thoughts.git
 ```
 
 Force push
