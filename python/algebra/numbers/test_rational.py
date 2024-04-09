@@ -4,7 +4,7 @@ p = Rational(7, 4)
 
 strings = [
     "{num}/{div}",
-    "{quot} ⌐ {rem}",
+    "{quot} rem {rem}",
     "{quot}[{rem}/{div}]"
 ]
 
