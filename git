@@ -1,0 +1,22 @@
+#!/usr/bin/zsh
+
+case $1 in
+
+  "push")
+    git add .
+    git commit -m "#auto-commit: [$(date)]"
+    git push -f
+  ;;
+
+  "pull")
+    git pull -f
+  ;;
+
+  "main")
+    git checkout main -f
+  ;;
+
+  *)
+     echo "Invalid input: $1"
+  ;;
+esac
