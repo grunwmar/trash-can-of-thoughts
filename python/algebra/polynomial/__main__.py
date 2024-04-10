@@ -12,5 +12,8 @@ if __name__ == "__main__":
     print(p, q, r)
     print(s)
 
+
     print(pretty_string(p,q,r, separator=",   "))
     print(pretty_string(s, separator=""))
+
+    print(p,q,r,s)
