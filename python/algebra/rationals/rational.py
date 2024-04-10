@@ -19,7 +19,6 @@ class Rational(Number):
         return Rational(numerator, divisor)
 
 
-
     def __init__(self, a:int, b:int):
         self._val = (int(a), int(b))
         self.normalize()
