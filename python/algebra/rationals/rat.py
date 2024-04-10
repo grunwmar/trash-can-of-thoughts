@@ -1,4 +1,4 @@
-from rational import Rational
+from rational_numbers import Rational
 import sys
 
 f = float(sys.argv[1])

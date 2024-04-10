@@ -1,4 +1,4 @@
-from rational import Rational
+from rational_numbers import Rational
 
 p = Rational(7, 4)
 
