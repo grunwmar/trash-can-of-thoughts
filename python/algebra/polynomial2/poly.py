@@ -1,15 +1,17 @@
 
-def poly(qlst):
+def polynomial(qlst):
 
-    def m(a, k):
+    def monial(a, k):
         return lambda t: a*(t**k)
 
-    lst = [m(b, k) for k, b in enumerate(qlst)]
+    lst = [monial(a, k) for k, a in enumerate(qlst)]
     
-    def r(t):
+    def monial_sum(t):
         return sum(f(t) for f in lst)
 
-    return r
+    return monial_sum
+
+
 
 y = poly([1,1,1])(2)
 
